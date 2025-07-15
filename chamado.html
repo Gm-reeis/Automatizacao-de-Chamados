@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Central de Suporte - Acsiv Sistemas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Central de Suporte - Automatização de Chamados </h1>
+    <p>Encontre a solução para o problema antes de acionar o desenvolvedor</p>
+
+    <div class="nav-top">
+    <a href="index.html">Menu</a>
+    <a href="form.html">Formulario</a>
+    <a href="chamado.html">Chamados</a>
+    </div>
+  </header>
+  <main style="padding: 15px;">
+   <hr>
+     <div class="filtro-Prioridade">
+      <label for="filtro">Filtrar por prioridade:</label>
+     <select id="filtroPri" onchange="filtrarChamados()">
+    <option value="Todos">Todos</option>
+    <option value="Baixa">Baixa</option>
+    <option value="Media">Média</option>
+    <option value="Alta">Alta</option>
+    <option value="Urgente">Urgente</option>
+  </select>
+    <label for="filtro">Filtrar Tipo de Problema:</label>
+    <select id="filtroPro">
+      <option value="Todos">Todos</option>
+      <option value="Software">Software</option>
+      <option value="Hardware">Hardware</option>
+    </select>
+
+  </div>
+  
+<h2>Chamados Registrados</h2>
+<button id="btnAtualizar">Atualizar lista</button>
+  <div id="listaChamados">
+  </div>
+
+  </main>
+  <footer>
+    &copy; 2025 Automatização de Chamados Test
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Central de Suporte - Acsiv Sistemas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Central de Suporte - Automatização de Chamados </h1>
+    <p>Encontre a solução para o problema antes de acionar o desenvolvedor</p>
+
+    <div class="nav-top">
+    <a href="index.html">Menu</a>
+    <a href="form.html">Formulario</a>
+    <a href="chamado.html">Chamados</a>
+    </div>
+  </header>
+  <main style="padding: 20px; max-width: 800px; margin: auto;">
+    <hr>
+    
+    <h2>Formulário de Chamado</h2>
+    <div class="card">
+      <form id="formChamado">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+
+        <label for="email">Email do cartório:</label>
+        <input type="email" id="email" required>
+
+        <label for="tipo">Tipo de problema:</label>
+        <select id="tipo">
+          <option>Software</option>
+          <option>Hardware</option>
+        </select>
+          
+            <fieldset>
+            <legend> Nivel De Prioridade</legend>
+            <input type="checkbox" name="nivel" id="Baixa"> <label for="Baixa"> Baixa
+            </label><br>
+             <input type="checkbox" name="nivel" id="Media"> <label for="Media"> Media
+            </label><br>
+              <input type="checkbox" name="nivel" id="Alta"> <label for="Alta"> Alta
+            </label><br>
+               <input type="checkbox" name="nivel" id="Urgente"> <label for="Urgente"> Urgente
+            </label>
+         </fieldset><br>
+
+        <label for="descricao">Descrição do problema:</label>
+        <textarea id="descricao" rows="4" required></textarea>
+
+        <button type="submit">Enviar chamado</button>
+      </form>
+      <p id="confirmacao" style="color: green; display: none;">Chamado enviado com sucesso!</p>
+    </div>
+    
+  </main>
+  <footer>
+    &copy; 2025 Automatização de Chamados Test
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
