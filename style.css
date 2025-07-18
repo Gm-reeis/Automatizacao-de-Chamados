@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-image: linear-gradient(to bottom right, #d45434, #e44c3a, #843454);
+  background-image: linear-gradient(to bottom right, #b91c2c, #ec1c1c, #b91c2c);
   color: white;
   padding: 20px;
   text-align: center;
@@ -34,15 +34,6 @@ select {
   border-radius: 5px;
 }
 
-button {
-  background-color: #2980b9;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
 .card {
   background-color: white;
   border-radius: 8px;
@@ -54,15 +45,6 @@ button {
 .card h3 {
   margin-top: 0;
 }
-
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #e44434;
-  color: white;
-  margin-top: 20px;
-}
-
 
 main {
   flex: 1;
@@ -89,13 +71,15 @@ footer {
   background-color: white;
 }
 a {
-  color: #afafaf;
-  padding: 10px 30px;
+  color: #fff;
+  padding: 10px 35px;
   text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 10px;
 }
 
 a:hover {
-  color: #ffffff;
+  color: #000;
 }
 #listaChamados {
   display: grid;
@@ -113,4 +97,11 @@ a:hover {
 #search {
   width: 999px;
   margin-left: 8px;
+}
+#btn-enviar{
+  cursor: pointer;
+  padding: 10px 25px;
+  text-decoration: none;
+  border: 1px solid #000;
+  border-radius: 10px;
 }
